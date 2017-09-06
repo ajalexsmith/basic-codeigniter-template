@@ -10,6 +10,7 @@ class Login extends CI_Controller {
 		$this->session->sess_destroy();
 		$data["page"] = "Login";
 		$data["error"] = $error;
+//		$data["error"] = $this->login_model->adduser("test", "testpassword");
 		$this->load->view("login", $data);
 	}
 	public function check() {

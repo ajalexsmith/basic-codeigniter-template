@@ -18,7 +18,7 @@ class Login extends CI_Controller {
 		$password = $this->input->post("password", true);
 		$valid = $this->login_model->validate($username, $password);
 		if ($valid === true) {
-			redirect("/home/", "refresh");
+			redirect("/admin/", "refresh");
 		} else {
 			$this->index($valid);
 		}

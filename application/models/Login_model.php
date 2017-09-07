@@ -26,7 +26,7 @@ class Login_model extends CI_Model {
 				}
 			}
 		}
-		return $error;
+		return $this->error;
 	}
 	public function adduser($username, $password) {
 		$data = Array(
